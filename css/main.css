@@ -397,6 +397,10 @@ body {
   background-color: #F5F5F5;
 }
 
+.section {
+  height: 100vh;
+}
+
 .header {
   margin-top: 25px;
 }
