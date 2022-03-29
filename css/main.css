@@ -554,7 +554,6 @@ body {
 
 .title--benefits {
   text-transform: uppercase;
-  padding: 101px 0px 18px;
   text-align: center;
 }
 
@@ -574,7 +573,6 @@ body {
 
 .benefits__list {
   margin-top: 60px;
-  padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,7 +641,6 @@ body {
 
 .reviews {
   background: white;
-  padding: 64px 0px;
 }
 
 .title--reviews {
@@ -747,7 +744,6 @@ body {
 .send-form {
   background: #181818;
   color: white;
-  padding: 68px 0px 85px;
 }
 
 .title--form {
