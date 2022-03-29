@@ -452,7 +452,8 @@ body {
 }
 
 .container--hero {
-  background: url(../../images/hero_img.png) top 47px right no-repeat;
+  background: url(../images/hero_img.png) top 47px right no-repeat;
+  /*comment*/
 }
 
 .hero__title {
@@ -574,7 +575,7 @@ body {
   padding-right: 0px;
 }
 .benefits__item:before {
-  content: url(../../images/shape.png);
+  content: url(../images/shape.png);
   position: absolute;
   top: 60px;
   right: 0;
