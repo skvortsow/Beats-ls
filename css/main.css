@@ -721,6 +721,10 @@ body {
   border-radius: 50%;
   width: 74px;
   height: 74px;
+  border: transparent solid 4px;
+}
+.pager__img:hover {
+  border-color: #E01F3D;
 }
 
 .send-form {

@@ -85,4 +85,9 @@
     border-radius: 50%;
     width: 74px;   
     height: 74px;
+    border: transparent solid 4px;
+
+    &:hover{
+        border-color: $red;
+    }
 }
