@@ -1,0 +1,97 @@
+.header{
+    margin-top: 25px;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__item{
+    margin-right: 27px;
+
+    :last-child{
+        margin-right: 0px;
+    }
+}
+
+.menu__link{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+}
+
+.contacts__number{
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    font-style: normal;
+    margin-left: 5px;
+}
+
+.container--hero{
+    background: url(../../images/hero_img.png) top 47px right no-repeat;
+}
+
+.hero__title{
+    width: 400px;
+    padding: 95px 0px 22px;
+    text-transform: uppercase;
+}
+
+.hero__subtitle{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    width: 322px;
+}
+
+.button{
+    display: inline-block;
+    padding: 18px 41px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 54px 0px 88px;
+    background-color: $red;
+    color: white;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+
+.pros__list{
+    display: flex;
+    padding-bottom: 65px;
+}
+
+.pros__item{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    :last-child{
+        margin-right: 0px;
+    }
+}
+
+.pros__text{
+    width: 114px;
+    margin-left: 11px;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}

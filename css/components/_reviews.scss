@@ -1,0 +1,88 @@
+.reviews{
+    background: white;
+    padding: 64px 0px;
+}
+
+.title--reviews{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reviews__card{
+    padding: 42px;
+    background: #F8FAF9;
+    display: flex;
+    align-items: center;
+    margin: 32px 0px 15px;
+    position: relative;
+}
+
+.reviews__card::after{
+    content: '';
+    display: block;
+    width: 83px;
+    height: 83px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -41px;
+}
+
+.card__content{
+    margin-left: 38px;
+}
+
+.card__title{
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.card__text{
+    margin: 27px 0px 38px;
+    p{
+        font-family: 'Play', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: $body;
+    }
+}
+
+.card__name{
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.rewiews__pager{
+    display: flex;
+    justify-content: center;
+}
+
+.pager__list{
+    display: flex;
+    align-items: center;
+}
+
+.pager__item{
+    margin-right: 6px;
+    :last-child{
+        margin-right: 0px;
+    }
+}
+
+.pager__item--active{
+    .pager__img{
+        border: $red solid 4px;
+    }
+}
+
+.pager__img{
+    border-radius: 50%;
+    width: 74px;   
+    height: 74px;
+}
