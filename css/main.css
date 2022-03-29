@@ -357,6 +357,19 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 ul {
   margin: 0px;
@@ -385,10 +398,6 @@ h2 {
   padding: 0px;
 }
 
-button {
-  border: none;
-}
-
 input, label {
   display: block;
 }
@@ -399,6 +408,20 @@ body {
 
 .section {
   height: 100vh;
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  padding: 18px 41px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #E01F3D;
+  color: white;
+  border-radius: 100px;
+  text-transform: uppercase;
 }
 
 .header {
@@ -474,18 +497,8 @@ body {
   width: 322px;
 }
 
-.button {
-  display: inline-block;
-  padding: 18px 41px;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
+.button--hero {
   margin: 54px 0px 88px;
-  background-color: #E01F3D;
-  color: white;
-  border-radius: 100px;
-  text-transform: uppercase;
 }
 
 .pros__list {
@@ -649,9 +662,9 @@ body {
           align-items: center;
   margin: 32px 0px 15px;
   position: relative;
+  overflow: hidden;
 }
-
-.reviews__card::after {
+.reviews__card:after {
   content: "";
   display: block;
   width: 83px;
@@ -659,8 +672,8 @@ body {
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  left: 50%;
-  top: -41px;
+  left: calc(50% - 41px);
+  top: -60px;
 }
 
 .card__content {
@@ -886,4 +899,8 @@ label {
   line-height: 18px;
   background: none;
   padding: 15px 15px;
+}
+
+.button--form {
+  margin-top: 64px;
 }

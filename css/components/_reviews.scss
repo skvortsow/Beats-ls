@@ -15,18 +15,19 @@
     align-items: center;
     margin: 32px 0px 15px;
     position: relative;
-}
+    overflow: hidden;
 
-.reviews__card::after{
-    content: '';
-    display: block;
-    width: 83px;
-    height: 83px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: -41px;
+    &:after{
+        content: '';
+        display: block;
+        width: 83px;
+        height: 83px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - 41px);
+        top: -60px;
+    }
 }
 
 .card__content{

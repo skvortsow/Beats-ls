@@ -1,0 +1,105 @@
+.header {
+  margin-top: 25px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item :last-child {
+  margin-right: 0px;
+}
+
+.menu__link {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__number {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  font-style: normal;
+  margin-left: 5px;
+}
+
+.container--hero {
+  background: url(../images/hero_img.png) top 47px right no-repeat;
+  /*comment*/
+}
+
+.hero__title {
+  width: 400px;
+  padding: 95px 0px 22px;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  width: 322px;
+}
+
+.button--hero {
+  margin: 54px 0px 88px;
+}
+
+.pros__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 65px;
+}
+
+.pros__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+}
+.pros__item :last-child {
+  margin-right: 0px;
+}
+
+.pros__text {
+  width: 114px;
+  margin-left: 11px;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
