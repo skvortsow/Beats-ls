@@ -342,6 +342,10 @@ template {
   display: none;
 }
 
+html {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -353,7 +357,7 @@ p {
 }
 
 .container {
-  max-width: 950px;
+  max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -382,18 +386,11 @@ li {
   padding: 0px;
 }
 
-h1 {
+h1, h2 {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
-}
-
-h2 {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 3rem;
+  line-height: 3.25rem;
   margin: 0px;
   padding: 0px;
 }
@@ -413,11 +410,11 @@ body {
 .button {
   border: none;
   display: inline-block;
-  padding: 18px 41px;
+  padding: 1.125rem 2.56rem;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   background-color: #E01F3D;
   color: white;
   border-radius: 100px;
@@ -425,7 +422,7 @@ body {
 }
 
 .header {
-  margin-top: 25px;
+  margin-top: 1.5rem;
 }
 
 .header__container {
@@ -447,7 +444,7 @@ body {
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.68rem;
 }
 .menu__item :last-child {
   margin-right: 0px;
@@ -456,8 +453,8 @@ body {
 .menu__link {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
 
 .contacts {
@@ -472,40 +469,40 @@ body {
 .contacts__number {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
   font-style: normal;
-  margin-left: 5px;
+  margin-left: 0.3rem;
 }
 
 .container--hero {
-  background: url(../images/hero_img.png) top 47px right no-repeat;
+  background: url(../images/hero_img.png) top 3rem right no-repeat;
   /*comment*/
 }
 
 .hero__title {
-  width: 400px;
-  padding: 95px 0px 22px;
+  width: 25rem;
+  padding: 6rem 0px 1.37rem;
   text-transform: uppercase;
 }
 
 .hero__subtitle {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
-  width: 322px;
+  font-size: 1.3rem;
+  line-height: 1.56rem;
+  width: 20rem;
 }
 
 .button--hero {
-  margin: 54px 0px 88px;
+  margin: 3.37rem 0px 5.5rem;
 }
 
 .pros__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 65px;
+  padding-bottom: 4rem;
 }
 
 .pros__item {
@@ -515,19 +512,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 .pros__item :last-child {
   margin-right: 0px;
 }
 
 .pros__text {
-  width: 114px;
-  margin-left: 11px;
+  width: 7.125rem;
+  margin-left: 0.68rem;
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }
 
 .benefits {
@@ -543,13 +540,13 @@ body {
 }
 
 .benefits__img--top {
-  top: -15px;
+  top: -1rem;
   right: 0px;
 }
 
 .benefits__img--bottom {
-  bottom: -15px;
-  left: -50px;
+  bottom: -1rem;
+  left: -3.125rem;
 }
 
 .title--benefits {
@@ -558,21 +555,21 @@ body {
 }
 
 .small-text {
-  width: 590px;
+  width: 36.8rem;
   margin-left: auto;
   margin-right: auto;
 }
 .small-text p {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   text-align: center;
   color: #666666;
 }
 
 .benefits__list {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,7 +589,7 @@ body {
 .benefits__item:before {
   content: url(../images/shape.png);
   position: absolute;
-  top: 60px;
+  top: 3.75rem;
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -603,8 +600,8 @@ body {
 
 .benefit__header {
   background-color: #F2F5F4;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
@@ -617,14 +614,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .benefit__title {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 1.5rem;
+  line-height: 1.68rem;
   margin-bottom: 7px;
 }
 
@@ -635,8 +632,8 @@ body {
   color: #666666;
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }
 
 .reviews {
@@ -649,7 +646,7 @@ body {
 }
 
 .reviews__card {
-  padding: 42px;
+  padding: 2.62rem;
   background: #F8FAF9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,49 +654,49 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 32px 0px 15px;
+  margin: 2rem 0px 1rem;
   position: relative;
   overflow: hidden;
 }
 .reviews__card:after {
   content: "";
   display: block;
-  width: 83px;
-  height: 83px;
+  width: 5rem;
+  height: 5rem;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  left: calc(50% - 41px);
-  top: -60px;
+  left: calc(50% - 40px);
+  top: -3.75rem;
 }
 
 .card__content {
-  margin-left: 38px;
+  margin-left: 2.375rem;
 }
 
 .card__title {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 1.5rem;
+  line-height: 1.68rem;
 }
 
 .card__text {
-  margin: 27px 0px 38px;
+  margin: 1.68rem 0px 2rem;
 }
 .card__text p {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #666666;
 }
 
 .card__name {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
 
 .rewiews__pager {
@@ -749,7 +746,7 @@ body {
 .title--form {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 form {
@@ -762,7 +759,7 @@ form {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 26px;
+  margin-right: 1.625rem;
 }
 .form__half:last-child {
   margin: 0;
@@ -772,14 +769,14 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 
 .form__field {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 14px;
+  margin-right: 0.875rem;
 }
 .form__field:last-child {
   margin-right: 0;
@@ -789,7 +786,7 @@ form {
   width: 100%;
   border-radius: 4px;
   border: 3px solid transparent;
-  padding: 18px 12px;
+  padding: 1.125rem 0.75rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -799,28 +796,28 @@ form {
 }
 
 .form__input--textarea {
-  height: 155px;
-  margin-bottom: 26px;
+  height: 9.687rem;
+  margin-bottom: 1.625rem;
   resize: none;
 }
 
 label {
-  margin-bottom: 6px;
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }
 
 .radio__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1.125rem;
+  margin-bottom: 1rem;
 }
 
 .radio__item {
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 .radio__item:last-child {
   margin: 0;
@@ -866,17 +863,17 @@ label {
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 1.56rem;
+  height: 1.56rem;
   position: relative;
   border-radius: 50%;
   background: white;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .radio__visible::before {
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 0.8rem;
+  height: 0.8rem;
   background: #E01F3D;
   border-radius: 50%;
   position: absolute;
@@ -891,12 +888,52 @@ label {
   text-transform: none;
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   background: none;
-  padding: 15px 15px;
+  padding: 1rem;
 }
 
 .button--form {
-  margin-top: 64px;
+  margin-top: 4rem;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 35%;
+  right: 5%;
+}
+
+.fixed-menu__item {
+  margin-bottom: 3px;
+}
+.fixed-menu__item:last-child {
+  margin: 0px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__item--active .fixed-menu__link:after {
+  background-color: #E01F3D;
+}
+
+.fixed-menu__link {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+}
+.fixed-menu__link:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #292929;
+  width: 0.375rem;
+  height: 0.375rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

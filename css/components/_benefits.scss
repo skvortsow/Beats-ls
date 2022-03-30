@@ -11,13 +11,13 @@
 }
 
 .benefits__img--top{
-    top: -15px;
+    top: -1rem;
     right: 0px;
 }
 
 .benefits__img--bottom{
-    bottom: -15px;
-    left: -50px;
+    bottom: -1rem;
+    left: -3.125rem;
 }
 
 .title--benefits{
@@ -26,21 +26,21 @@
 }
 
 .small-text{
-    width: 590px;
+    width: 36.8rem;
     margin-left: auto;
     margin-right: auto;
     p{
         font-family: 'Play', sans-serif;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 1.125rem;
         text-align: center;
         color: $body;
     }
 }
 
 .benefits__list{
-    margin-top: 60px;
+    margin-top: 3.75rem;
     display: flex;
 }
 
@@ -60,7 +60,7 @@
     &:before{
         content: url(../images/shape.png);
         position: absolute;
-        top: 60px;
+        top: 3.75rem;
         right: 0;
         transform: translateX(50%);
     }
@@ -72,22 +72,22 @@
 
 .benefit__header{
     background-color: #F2F5F4;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .benefit__title{
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 1.5rem;
+    line-height: 1.68rem;
     margin-bottom: 7px;
 }
 
@@ -97,7 +97,7 @@
         color: #666666;
         font-family: 'Play', sans-serif;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 1.125rem;
     }
 }

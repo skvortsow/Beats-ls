@@ -8,45 +8,45 @@
 }
 
 .reviews__card{
-    padding: 42px;
+    padding: 2.62rem;
     background: #F8FAF9;
     display: flex;
     align-items: center;
-    margin: 32px 0px 15px;
+    margin: 2rem 0px 1rem;
     position: relative;
     overflow: hidden;
 
     &:after{
         content: '';
         display: block;
-        width: 83px;
-        height: 83px;
+        width: 5rem;
+        height: 5rem;
         background-color: white;
         border-radius: 50%;
         position: absolute;
-        left: calc(50% - 41px);
-        top: -60px;
+        left: calc(50% - 40px);
+        top: -3.75rem;
     }
 }
 
 .card__content{
-    margin-left: 38px;
+    margin-left: 2.375rem;
 }
 
 .card__title{
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 1.5rem;
+    line-height: 1.68rem;
 }
 
 .card__text{
-    margin: 27px 0px 38px;
+    margin: 1.68rem 0px 2rem;
     p{
         font-family: 'Play', sans-serif;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 1.125rem;
         color: $body;
     }
 }
@@ -54,8 +54,8 @@
 .card__name{
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
 }
 
 .rewiews__pager{
