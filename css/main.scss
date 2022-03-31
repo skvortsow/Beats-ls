@@ -19,14 +19,14 @@ $baseFontSize: 16px;
 //breackpoints
 $tablets: 768px;
 $mobile: 480px;
+
 @import "./components/_media.scss";
 @import "./components/_layout.scss";
 
 
 
-html{
-    font-size: $baseFontSize;
-}
+
+
 
 a{
     text-decoration: none;

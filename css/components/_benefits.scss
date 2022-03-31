@@ -129,11 +129,12 @@
         color: #666666;
         font-family: 'Play', sans-serif;
         font-weight: 400;
-        font-size: 1rem;
+        /*font-size: $baseFontSize;*/
         line-height: 1.125rem;
     }
 
     @include tablets{
         width: 90%;
+        /*font-size: $baseFontSize;*/
     }
 }
