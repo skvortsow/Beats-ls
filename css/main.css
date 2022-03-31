@@ -352,6 +352,20 @@ template {
 html {
   font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+html {
+  font-size: 16px;
+}
 
 a {
   text-decoration: none;
@@ -401,6 +415,12 @@ h1, h2 {
   margin: 0px;
   padding: 0px;
 }
+@media screen and (max-width: 480px) {
+  h1, h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
 
 input, label {
   display: block;
@@ -433,20 +453,6 @@ body {
     width: 95%;
   }
 }
-html {
-  font-size: 16px;
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-}
-
 .header {
   margin-top: 1.5rem;
   position: absolute;
@@ -616,8 +622,8 @@ html {
   }
 
   .hero__title {
-    font-size: 2rem;
-    width: 76%;
+    font-size: 1.6875rem;
+    width: 75%;
   }
   .hero__title:before {
     content: "";
