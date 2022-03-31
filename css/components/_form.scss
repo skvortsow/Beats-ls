@@ -7,16 +7,32 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3.75rem;
+    @include tablets{
+        margin-bottom: rem(32px);
+    }
 }
 
 form{
     display: flex;
+
+    @include tablets{
+        flex-direction: column;
+        padding: 0px rem(100px);
+    }
+
+    @include mobile{
+        padding: 0px;
+    }
 }
 
 .form__half{
     flex: 1;
     margin-right: 1.625rem;
     &:last-child{
+        margin: 0;
+    }
+
+    @include tablets{
         margin: 0;
     }
 }
@@ -45,12 +61,19 @@ form{
         border-color: $red;
         outline: none;
     }
+
+    @include tablets{
+        padding: rem(8px) rem(10px);
+    }
 }
 
 .form__input--textarea{
     height: 9.687rem;
     margin-bottom: 1.625rem;
     resize: none;
+    @include tablets{
+        margin-bottom: rem(10px);
+    }
 }
 
 label{
@@ -58,6 +81,7 @@ label{
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.125rem;
+    margin-bottom: 5px;
 }
 
 .radio__list{
@@ -130,6 +154,13 @@ label{
     }
 }
 
+.form__btns{
+    @include tablets{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .button--clear{
     text-transform: none;
     font-family: 'Play', sans-serif;
@@ -142,4 +173,7 @@ label{
 
 .button--form{
     margin-top: 4rem;
+    @include tablets{
+        margin-top: rem(36px);
+    }
 }

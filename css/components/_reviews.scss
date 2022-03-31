@@ -27,10 +27,39 @@
         left: calc(50% - 40px);
         top: -3.75rem;
     }
+
+    @include tablets {
+        flex-direction: column;
+        padding: rem(56px) rem(24px) rem(37px);
+    }
+
+    @include mobile {
+        flex-direction: column;
+        padding: rem(56px) rem(24px) rem(37px);
+        &:after{
+            display: none;
+        }
+    }
+}
+
+.card__img{
+    @include tablets{
+        width: 130px;
+        height: 130px;
+    }
 }
 
 .card__content{
     margin-left: 2.375rem;
+
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem(32px);
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .card__title{
