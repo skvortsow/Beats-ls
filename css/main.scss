@@ -1,6 +1,15 @@
 //normalize
 @import "./normalize.scss";
 
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+
+//breackpoints
+$tablets: 768px;
+$mobile: 480px;
 
 //colors
 
@@ -9,8 +18,10 @@ $body: #666666;
 $black: #292929;
 $white: #fff;
 
+$baseFontSize: 16px;
+
 html{
-    font-size: 16px;
+    font-size: $baseFontSize;
 }
 
 a{
@@ -83,6 +94,12 @@ body{
     text-transform: uppercase; 
 }
 
+@media (max-width: 768px){
+    .container{
+        width: 95%;
+    }
+}
+
 //setups
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap");
 
@@ -91,11 +108,11 @@ body{
 
 
 //components
+@import "./components/_media.scss";
+@import "./components/_layout.scss";
 @import "./components/_hero.scss";
 @import "./components/_benefits.scss";
 @import "./components/_reviews.scss";
 @import "./components/_form.scss";
 @import "./components/_fixed-menu.scss";
-
-
 

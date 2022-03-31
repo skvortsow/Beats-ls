@@ -1,0 +1,11 @@
+html {
+    font-size: $baseFontSize;
+
+    @include tablets{ 
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include mobile{ 
+        font-size: $baseFontSize - 2px;
+    }
+}

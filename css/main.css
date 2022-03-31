@@ -342,6 +342,13 @@ template {
   display: none;
 }
 
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -421,8 +428,30 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 .header {
   margin-top: 1.5rem;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 
 .header__container {
@@ -475,9 +504,12 @@ body {
   margin-left: 0.3rem;
 }
 
+.menu__burger {
+  display: none;
+}
+
 .container--hero {
-  background: url(../images/hero_img.png) top 3rem right no-repeat;
-  /*comment*/
+  background: url(../images/hero_img.png) top 7rem right no-repeat;
 }
 
 .hero__title {
@@ -502,7 +534,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 4rem;
 }
 
 .pros__item {
@@ -527,6 +558,76 @@ body {
   line-height: 1.125rem;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .menu__burger {
+    display: block;
+  }
+
+  .container--hero {
+    background: none;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .pros__list {
+    display: none;
+  }
+
+  .hero__title {
+    width: 76%;
+  }
+  .hero__title:before {
+    content: url(../images/hero_img-small.png);
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .menu__burger {
+    display: block;
+  }
+
+  .container--hero {
+    background: none;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .pros__list {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+    width: 76%;
+  }
+  .hero__title:before {
+    content: "";
+    background: url(../images/hero_img-small.png) center center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 70vw;
+    display: block;
+  }
+}
 .benefits {
   background-color: white;
 }
@@ -936,4 +1037,15 @@ label {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
 }

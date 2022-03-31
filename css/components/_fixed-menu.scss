@@ -40,3 +40,15 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@include tablets {
+    .fixed-menu{
+        display: none;
+    }
+}
+
+@include mobile {
+    .fixed-menu{
+        display: none;
+    }
+}
