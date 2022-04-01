@@ -1,0 +1,27 @@
+.phone-icon{
+    height: 14px;
+    width: 14px;
+}
+
+.socials__svg{
+    height: 30px;
+    width: 30px;
+    @include mobile{
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.menu__burger-icon{
+    width: 26px;
+    height: 24px;
+}
+
+.pros__svg{
+    width: 52px;
+    height: 52px;
+}
+
+.benefit__svg{
+    height: 68px;
+}

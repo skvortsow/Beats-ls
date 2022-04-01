@@ -31,8 +31,28 @@
 }
 
 .contacts{
-    display: flex;
     align-items: center;
+    display: flex;
+    align-items: flex-end;
+    
+    &--footer{
+        margin: 20px 0px;
+    }  
+
+    &__phone{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.phone-icon--footer{
+    @include tablets{
+        fill: $red;
+    }
+
+    @include mobile{
+        fill: black ;
+    }
 }
 
 .contacts__number{
@@ -41,7 +61,7 @@
     font-size: 1.125rem;
     line-height: 1.125rem;
     font-style: normal;
-    margin-left: 0.3rem;
+    margin-left: rem(6px);
 }
 
 .menu__burger{
