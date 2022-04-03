@@ -1,0 +1,162 @@
+.container--slider {
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow__right,
+.arrow__left {
+    height: 27px;
+}
+
+.slider__arrow{
+    @include tablets{
+        display: none;
+    }
+}
+
+.slider__arrow-mob{
+    display: none;
+    @include tablets{
+        display: block;
+    }
+}
+
+.slider__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.slider__img {
+    margin-right: rem(46px);
+    margin-left: rem(30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablets{
+        margin: 0;
+    }
+
+    
+
+    &-item {
+        @include tablets {
+            height: rem(306px);
+            width: rem(306px);
+            margin: 0px rem(53px);
+        }
+
+        @include mobile{
+            height: 80%;
+            width: 80%;
+            margin: 0px;
+        }
+    }
+}
+
+.slider__content{
+    @include tablets{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.slider__properties {
+    height: rem(91px);
+    width: rem(91px);
+    border-radius: 4px;
+    background: #9A9A9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.slider__properties-icon {
+    height: rem(42px);
+    width: rem(42px);
+}
+
+.slider__title {
+    text-transform: uppercase;
+    font-size: rem(36px);
+    line-height: rem(41px);
+    margin-bottom: rem(24px);
+    
+    @include tablets{
+        font-size: rem(28px);
+        margin-top: rem(50px);
+    }
+
+    @include mobile{
+        width: 85%;
+    }
+}
+
+.slider__text {
+    p {
+        font-family: 'Play', serif;
+        color: $body;
+    }
+
+    margin-bottom: rem(24px);
+    width: 73%;
+}
+
+.slider__params {
+    display: flex;
+    font-family: 'Play', serif;
+    margin-bottom: rem(24px);
+    text-align: left;
+}
+
+.slider__params-item {
+    width: rem(100px);
+    margin-right: rem(45px);
+
+    @include tablets{
+        margin-right: rem(86px);;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.params-item__title {
+    color: $body;
+}
+
+.params-item__description {
+    font-weight: 700;
+}
+
+.slider__order{
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Play', serif;
+    font-size: rem(36px);
+    margin-right: 13px;
+
+    @include tablets{
+        margin-right: rem(30px);
+    }
+
+    @include mobile{
+        margin-right: rem(14px);
+    }
+}

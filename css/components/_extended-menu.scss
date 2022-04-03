@@ -1,0 +1,32 @@
+.extended-menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #333537;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    &--hidden{
+        display: none;
+    }
+}
+
+.extended-menu__close{
+    height: rem(20px);
+    width: rem(20px);
+    fill: #FFFFFF;
+    position: absolute;
+    top: rem(34px);
+    right: rem(16px);
+}
+
+.extended-menu__list{
+    text-align: center;
+    color: white;
+    font-family: 'Play', serif;
+    font-weight: 400;
+    font-size: rem(36px);
+    line-height: rem(72px);
+}

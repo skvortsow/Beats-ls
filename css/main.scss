@@ -44,7 +44,7 @@ p{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
 
     &--footer, &--header{
@@ -90,7 +90,7 @@ body{
 }
 
 .section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .button{
@@ -131,3 +131,5 @@ body{
 @import "./components/_footer.scss";
 @import "./components/_socials.scss";
 @import "./components/_svg.scss";
+@import "./components/_extended-menu.scss";
+@import "./components/_slider.scss";
