@@ -5,10 +5,13 @@
     left: 0;
 }
 
-.header__container{
+.container--header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .menu__list{

@@ -25,7 +25,9 @@ $mobile: 480px;
 
 
 
-
+html{
+    font-family: 'Play', sans-serif;
+}
 
 
 a{
@@ -44,8 +46,10 @@ p{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     &--footer, &--header{
         flex-direction: row;
@@ -133,3 +137,4 @@ body{
 @import "./components/_svg.scss";
 @import "./components/_extended-menu.scss";
 @import "./components/_slider.scss";
+@import "./components/_team.scss";
