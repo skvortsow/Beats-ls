@@ -7,25 +7,17 @@
     text-align: center;
 }
 
-.reviews__card{
-    padding: 2.62rem;
+.reviews__item{
     background: #F8FAF9;
-    display: flex;
+    display: none;
     align-items: center;
     margin: 2rem 0px 1rem;
     position: relative;
     overflow: hidden;
+    padding: 2.62rem;
 
-    &:after{
-        content: '';
-        display: block;
-        width: 5rem;
-        height: 5rem;
-        background-color: white;
-        border-radius: 50%;
-        position: absolute;
-        left: calc(50% - 40px);
-        top: -3.75rem;
+    &--active{
+        display: flex;   
     }
 
     @include tablets {
@@ -40,6 +32,21 @@
             display: none;
         }
     }
+
+
+    &:after{
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - 40px);
+        top: -3.75rem;
+    }
+
+    
 }
 
 .card__img{
