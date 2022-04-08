@@ -1084,6 +1084,11 @@ form {
   }
 }
 
+.input-error {
+  border-color: #E01F3D;
+  outline: none;
+}
+
 .form__input--textarea {
   height: 9.687rem;
   margin-bottom: 1.625rem;
@@ -1901,4 +1906,133 @@ label {
   .title__svg {
     fill: #E01F3D;
   }
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  background: rgba(51, 53, 55, 0.8);
+}
+
+.modal__wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__container {
+  padding: 37px 55px;
+  background: white;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.modal__text {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.colors {
+  background: url("../../images/slider-bg.png") center center no-repeat;
+  color: white;
+  position: relative;
+}
+
+.container--colors {
+  display: block;
+}
+
+.colors__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colors__item-title {
+  height: 100%;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.colors__item-title--gray {
+  background: #999999;
+}
+.colors__item-title--black {
+  background: black;
+}
+.colors__item-title--red {
+  background: #E01F3D;
+}
+
+.colors--title {
+  text-transform: uppercase;
+  margin-top: 115px;
+}
+
+.colors-title__text {
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 36px;
+}
+
+.colors__content-wrapper {
+  overflow: hidden;
+  width: 0px;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+.colors__content {
+  padding: 35px;
+  background: rgba(51, 53, 55, 0.8);
+  height: 100%;
+  width: 100%;
 }

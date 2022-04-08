@@ -67,6 +67,11 @@ form{
     }
 }
 
+.input-error{
+    border-color: $red;
+    outline: none;
+}
+
 .form__input--textarea{
     height: 9.687rem;
     margin-bottom: 1.625rem;
