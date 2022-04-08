@@ -1992,7 +1992,7 @@ label {
 }
 
 .colors {
-  background: url("../../images/slider-bg.png") center center no-repeat;
+  background: url("../gimages/slider-bg.png") center center no-repeat;
   color: white;
   position: relative;
 }
