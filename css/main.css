@@ -1172,7 +1172,7 @@ label {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../../images/checkmark.png) center center no-repeat;
+  background: url(../images/checkmark.png) center center no-repeat;
 }
 
 .radio__elem {
