@@ -377,6 +377,22 @@ p {
   padding: 0px;
 }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
+}
+
 .container {
   max-width: 60rem;
   margin-left: auto;
@@ -443,8 +459,12 @@ body {
   background-color: #F5F5F5;
 }
 
+body, html {
+  height: 100%;
+}
+
 .section {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .button {
@@ -1264,14 +1284,31 @@ label {
     display: none;
   }
 }
+.light .fixed-menu__link::after {
+  background-color: white;
+}
+.light .fixed-menu__item--active .fixed-menu__link {
+  border-color: white;
+}
+.light .fixed-menu__item--active .fixed-menu__link:after {
+  background-color: white;
+}
+
 .map {
-  background: url(../images/map.png) center center no-repeat;
-  background-size: cover;
+  position: relative;
+}
+
+.map__block {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
   position: absolute;
-  width: 100%;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1280,9 +1317,6 @@ label {
 }
 
 .container--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

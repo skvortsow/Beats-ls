@@ -52,3 +52,19 @@
         display: none;
     }
 }
+
+.light{
+
+    .fixed-menu__link::after{
+        background-color: white;
+    }
+
+    .fixed-menu__item--active{
+        .fixed-menu__link{
+            border-color: white;
+            &:after{
+                background-color: white;
+            }
+        }
+    }
+}
