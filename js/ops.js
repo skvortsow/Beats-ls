@@ -82,7 +82,7 @@ $(window).on("keydown", e => {
 
 })
 
-$(".wrapper").on('touchmove', e => e.preventDefault());
+
 
 $("[data-scroll-to]").click(e => {
     e.preventDefault();
@@ -94,24 +94,24 @@ $("[data-scroll-to]").click(e => {
     performTransition(reqSection.index());
 })
 
+$(".wrapper").on('touchmove', e => e.preventDefault());
 
-$("body").swipe({
-    //Generic swipe handler for all directions
-    swipe: function (event, direction) {
-        const scroller = viewportScroller();
-        let scrollDirection = '';
+//$("body").swipe({
+//    swipe: function (event, direction) {     
+//
+//        const scroller = viewportScroller();
+//        let scrollDirection = '';
+//
+//        if (direction == "up"){
+//            scrollDirection = "next";
+//        }
+//
+//        if (direction == "down"){
+//            scrollDirection = "prev";
+//        }
+//
+//        scroller[scrollDirection]();
+//    }
+//});
 
-        if (direction == "up"){
-            scrollDirection = "next";
-        }
 
-        if (direction == "down"){
-            scrollDirection = "prev";
-        }
-
-        scroller[scrollDirection]();
-    }
-});
-
-//Set some options later
-$("#test").swipe({ fingers: 2 });

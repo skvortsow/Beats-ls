@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "name": "beats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sskvo/Beats-ls.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sskvo/Beats-ls/issues"
+  },
+  "homepage": "https://github.com/sskvo/Beats-ls#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
